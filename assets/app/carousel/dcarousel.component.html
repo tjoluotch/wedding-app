@@ -1,23 +1,10 @@
-<carousel>
-    <slide>
-        <img src="/assets/images/IMG_0107.jpg" alt="First slide">
+<carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
+    <slide *ngFor="let slide of slides; let index=index">
+        <img [src]="slide.image">
+
         <div class="carousel-caption">
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </div>
-    </slide>
-    <slide>
-        <img src="/assets/images/IMG_2744.jpg" alt="Second slide">
-        <div class="carousel-caption">
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </div>
-    </slide>
-    <slide>
-        <img src="/assets/images/IMG_2744.jpg" alt="Third slide">
-        <div class="carousel-caption">
-            <h3>Third slide label</h3>
-            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            <h4>Slide {{index}}</h4>
+            <p>{{slide.text}}</p>
         </div>
     </slide>
 </carousel>

@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
-import {CarouselModule} from "ngx-bootstrap";
+import {CarouselModule} from "ngx-bootstrap/carousel";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
