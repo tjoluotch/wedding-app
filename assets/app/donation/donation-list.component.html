@@ -1,0 +1,20 @@
+<h2>Donations Page</h2>
+<div>
+    <form [formGroup]="myForm" (ngSubmit)="openCheckout()">
+        <div class="form-group">
+            <label for="donAmount">Donation Amount</label>
+            <input
+                    type="number"
+                    id="donAmount"
+                    class="form-control"
+                    placeholder="e.g. 3000 = £30"
+                    formControlName="donAmount">
+        </div>
+
+        <button
+                type="submit"
+                class="btn btn-success"
+                >I'm ready to donate</button>
+
+    </form>
+</div>

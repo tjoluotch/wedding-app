@@ -1,0 +1,49 @@
+<div class="col-md-8 col-md-offset-2">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <h1>RSVP Form</h1>
+            <label for="firstName">First Name</label>
+            <input
+                    type="text"
+                    id="firstName"
+                    class="form-control"
+                    formControlName="firstName">
+        </div>
+
+        <div class="form-group"
+            id="last-name">
+            <label for="lastName">Last Name</label>
+            <input
+                    type="text"
+                    id="lastName"
+                    class="form-control"
+                    formControlName="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input
+                    type="text"
+                    id="email"
+                    class="form-control"
+                    formControlName="email">
+        </div>
+
+        <div class="form-group">
+            <label for="rsvpRes">RSVP Confirmation</label>
+            <input
+                    type="text"
+                    id="rsvpRes"
+                    class="form-control"
+                    placeholder="Attending, Not Attending"
+                    formControlName="rsvpRes">
+        </div>
+
+        <button
+                type="submit"
+                class="btn btn-success"
+                [disabled]="!myForm.valid">Submit</button>
+
+
+    </form>
+</div>
