@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
 import {CarouselModule} from "ngx-bootstrap/carousel";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -28,7 +29,8 @@ import {DcarouselComponent} from "./carousel/dcarousel.component";
         CommonModule,
         HttpModule,
         AppRoutingModule,
-        CarouselModule.forRoot()
+        CarouselModule.forRoot(),
+        NgbModule
     ],
     providers: [UserInfoService],
     bootstrap: [AppComponent]

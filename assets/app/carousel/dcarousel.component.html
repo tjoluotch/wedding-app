@@ -1,10 +1,23 @@
-<carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
-    <slide *ngFor="let slide of slides; let index=index">
-        <img [src]="slide.image">
-
+<ngb-carousel>
+    <ng-template ngbSlide>
+        <img src="/assets/images/IMG_3337.jpg" alt="Random first slide" height="900" width="500">
         <div class="carousel-caption">
-            <h4>Slide {{index}}</h4>
-            <p>{{slide.text}}</p>
+            <h3>10 seconds between slides...</h3>
+            <p>This carousel uses customized default values.</p>
         </div>
-    </slide>
-</carousel>
+    </ng-template>
+    <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=5"  alt="Random second slide">
+        <div class="carousel-caption">
+            <h3>No keyboard...</h3>
+            <p>This carousel uses customized default values.</p>
+        </div>
+    </ng-template>
+    <ng-template ngbSlide>
+        <img src="https://lorempixel.com/900/500?r=6" alt="Random third slide">
+        <div class="carousel-caption">
+            <h3>And no wrap after last slide.</h3>
+            <p>This carousel uses customized default values.</p>
+        </div>
+    </ng-template>
+</ngb-carousel>

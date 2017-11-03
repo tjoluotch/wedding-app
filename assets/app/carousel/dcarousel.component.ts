@@ -1,35 +1,21 @@
 import { Component } from '@angular/core';
-
+import {NgbCarouselConfig} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({
     selector: 'demo-carousel-config',
     templateUrl: './dcarousel.component.html',
+    providers: [NgbCarouselConfig]
 
 })
 export class DcarouselComponent {
 
 
-
-    public myInterval: number = 1500;
-    public slides: any[] = [];
-    public activeSlideIndex: number = 0;
-    public noWrapSlides:boolean = false;
-
-    public constructor() {
-        for (let i = 0; i < 4; i++) {
-            this.addSlide();
-        }
+    constructor(config: NgbCarouselConfig) {
+        // customize default values of carousels used by this component tree
+        config.interval = 10000;
+        config.wrap = false;
+        config.keyboard = false;
     }
 
-    public addSlide(): void {
-        this.slides.push({
-            image: `http://valor-software.com/ngx-bootstrap/assets/images/nature/${ this.slides.length % 8 + 1 }.jpg`
-        });
-    }
-
-    public removeSlide(index?: number): void {
-        const toRemove = index ? index : this.activeSlideIndex;
-        this.slides.splice(toRemove, 1);
-    }
 
 }
