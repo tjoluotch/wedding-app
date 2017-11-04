@@ -12,7 +12,7 @@ var appRoutes = require('./routes/app');
 var rsvpUserRoutes = require('./routes/rsvpUser');
 
 var app = express();
-mongoose.connect('localhost:27017/sigola-kuria');
+mongoose.connect('weddingjkvs:weddingjkvs@ds145275.mlab.com:45275/wedding-app');
 
 
 

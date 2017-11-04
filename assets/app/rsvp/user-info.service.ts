@@ -21,7 +21,7 @@ export class UserInfoService {
             const headers = new Headers({ 'Content-Type': 'application/json'}); // ... Set content type to JSON
 
 
-        return this.http.post('https://localhost:3000.com/rsvpUser', bodyString, {headers: headers}) // ... using post request
+        return this.http.post(' https://jkvswedding.herokuapp.com/rsvpUser', bodyString, {headers: headers}) // ... using post request
             .map((response: Response) => response.json()) // ...and calling .json() on the response to return Date
             .catch(error => Observable.throw('Serve the error')); //... error
 
