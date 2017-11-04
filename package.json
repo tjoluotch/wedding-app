@@ -8,6 +8,7 @@
     "build:prod": "del-cli public/js/app && ngc -p tsconfig.aot.json && ngc -p tsconfig.aot.json && webpack --config webpack.config.prod.js --progress --profile --bail && del-cli 'public/js/app/**/*.js' 'public/js/app/**/*.js.map' '!public/js/app/bundle.js' '!public/js/app/*.chunk.js' 'assets/app/**/*.ngfactory.ts' 'assets/app/**/*.shim.ts' 'assets/app/**/*.ngsummary.json' 'assets/app/**/*.ngstyle.ts'"
   },
   "dependencies": {
+    "@agm/core": "^1.0.0-beta.2",
     "@angular/animations": "^4.3.5",
     "@angular/common": "^4.3.5",
     "@angular/compiler": "^4.3.5",
@@ -20,7 +21,6 @@
     "@angular/platform-server": "^4.3.5",
     "@angular/router": "^4.3.5",
     "@angular/upgrade": "^4.0.0",
-    "@ng-bootstrap/ng-bootstrap": "^1.0.0-beta.5",
     "animate.css": "^3.5.2",
     "body-parser": "~1.15.2",
     "cookie-parser": "~1.4.3",
@@ -31,7 +31,6 @@
     "mongoose": "^4.11.5",
     "mongoose-unique-validator": "^1.0.5",
     "morgan": "~1.6.1",
-    "ngx-bootstrap": "^1.9.3",
     "reflect-metadata": "^0.1.3",
     "rxjs": "^5.2.0",
     "serve-favicon": "~2.3.0",

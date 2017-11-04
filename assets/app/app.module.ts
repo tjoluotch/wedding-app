@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { HttpModule } from '@angular/http';
-import {CarouselModule} from "ngx-bootstrap/carousel";
-import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+
+import {AgmCoreModule} from "@agm/core";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./app-routing.module";
@@ -29,8 +29,9 @@ import {DcarouselComponent} from "./carousel/dcarousel.component";
         CommonModule,
         HttpModule,
         AppRoutingModule,
-        CarouselModule.forRoot(),
-        NgbModule
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyAiPfY2hUjvuMLA2Qduuhu5KhPCbBy7Qhw'
+        })
     ],
     providers: [UserInfoService],
     bootstrap: [AppComponent]

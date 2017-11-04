@@ -9,5 +9,7 @@ import { Component } from '@angular/core';
 
 })
 export class AppComponent {
-
+      title: string = 'Wedding Venue';
+      lat: number = 53.7454804;
+      lng: number = -0.3414341999999806;
 }

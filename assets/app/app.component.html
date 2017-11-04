@@ -35,21 +35,24 @@
 
 <section id="top" class="jumbotron jumbotron-fluid">
     <div class="container">
-        <h1 class="display-1"> Wedding</h1>
-        <p class="display-4"> Join Us On Our Special Day</p>
-        <p class="lead"> wgegwgegegegegegeghsgdhf shjsfhjfjfh fhjsfh</p>
-        <p class="lead"> hejhejh erhjehjfd wjdksjskd</p>
-        <p><strong>Explore Our Site:</strong></p>
+        <h1 class="display-1">Velile and Josh here,</h1>
+        <p class="display-4">Your Welcome To Join Us On Our Special Day</p>
+        <p class="lead">Date : 22nd December 2017</p>
+        <p class="lead">Location: Jubilee Central Church - Hull</p>
+        <p><strong>Let us know if your coming by clicking the RSVP info link </strong>></p>
         <a routerLink="/donations" routerLinkActive="active" class="btn btn-lg btn-primary">Donations</a>
         <a routerLink="/rsvpInfo" routerLinkActive="active" class="btn btn-lg btn-primary">RSVP Info</a>
     </div>
 </section>
+<router-outlet></router-outlet>
+
 
 <div class="container">
     <section id="description">
-        <h2 class="display-4"> Who who what what where</h2>
-        <p>whwehwejw whejwehwjeh hwejhwjehwje whejwhej</p>
-        <p>whgwh djhjska GFHFGDHFG dhjfhsf</p>
+        <h2 class="display-4"><strong>On The Day</strong></h2>
+        <p>Ceremony will be held at</p>
+        <p>62 King Edward Street</p>
+        <p>Hull, HU1 3SQ</p>
     </section>
 
     <section id="gallery">
@@ -61,13 +64,13 @@
     </section>
 
     <section id="venue">
-        <h2 class="display-4">The wedding will be held at....</h2>
-        <p>grhgehhfje ergheghrje hweghwgjw hewghwer </p>
+        <h2 class="display-4">Venue Location - Google Maps</h2>
+            <agm-map [latitude]="lat" [longitude]="lng">
+                <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+            </agm-map>
     </section>
 </div>
 
-
-    <router-outlet></router-outlet>
 
 
 
