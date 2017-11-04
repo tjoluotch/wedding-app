@@ -1,3 +1,7 @@
 div.form-group{
-    padding: 10%;
+    pos: 10%;
+}
+
+button {
+    position: fixed;
 }

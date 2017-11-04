@@ -10,6 +10,16 @@ export class DonationListComponent implements OnInit {
 
     myForm: FormGroup;
 
+        multiplyBy(){
+            var input;
+            var final;
+            input = this.myForm.value.donAmount;
+            final = input * 100;
+            return final;
+        }
+
+
+
     openCheckout() {
         var handler = (<any>window).StripeCheckout.configure({
             key: 'pk_test_x3spH20fk2XajyCAyeiBKttC',
@@ -24,7 +34,7 @@ export class DonationListComponent implements OnInit {
         handler.open({
             name: 'Sigola Kuria Union',
             description: 'my donation',
-            amount: this.myForm.value.donAmount
+            amount: this.multiplyBy()
         });
     }
 
