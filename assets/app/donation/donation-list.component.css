@@ -1,7 +1,4 @@
 div.form-group{
-    pos: 10%;
+    width: 30%;
 }
 
-button {
-    position: fixed;
-}

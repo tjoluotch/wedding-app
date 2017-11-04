@@ -10,6 +10,8 @@ export class DonationListComponent implements OnInit {
 
     myForm: FormGroup;
 
+
+
         multiplyBy(){
             var input;
             var final;
@@ -22,7 +24,7 @@ export class DonationListComponent implements OnInit {
 
     openCheckout() {
         var handler = (<any>window).StripeCheckout.configure({
-            key: 'pk_test_x3spH20fk2XajyCAyeiBKttC',
+            key: 'pk_live_WClpLDJTpgVyaNhIrAm5Khzg',
             locale: 'auto',
             currency: 'gbp',
             token: function (token: any) {
