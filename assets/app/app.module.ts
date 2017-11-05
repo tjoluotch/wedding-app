@@ -30,7 +30,7 @@ import {DcarouselComponent} from "./carousel/dcarousel.component";
         HttpModule,
         AppRoutingModule,
         AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyAiPfY2hUjvuMLA2Qduuhu5KhPCbBy7Qhw'
+            apiKey: ''
         })
     ],
     providers: [UserInfoService],
