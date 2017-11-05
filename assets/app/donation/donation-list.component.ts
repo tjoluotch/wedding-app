@@ -24,7 +24,7 @@ export class DonationListComponent implements OnInit {
 
     openCheckout() {
         var handler = (<any>window).StripeCheckout.configure({
-            key: 'pk_live_WClpLDJTpgVyaNhIrAm5Khzg',
+            key: '',
             locale: 'auto',
             currency: 'gbp',
             token: function (token: any) {
