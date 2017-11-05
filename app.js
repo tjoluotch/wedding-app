@@ -13,7 +13,7 @@ var rsvpUserRoutes = require('./routes/rsvpUser');
 
 var app = express();
 
-var promise = mongoose.connect('weddingjkvs:weddingjkvs@ds145275.mlab.com:45275/wedding-app',{
+var promise = mongoose.connect('',{
  useMongoClient: true
 });
 
